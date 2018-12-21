@@ -2,7 +2,7 @@
 layout: post
 title: "지똥이를 영순위로 사랑하는 수빈이의 "
 comments: true
-description: "If you have a Guest post.."
+description: "수똥이의 수똥이가 "
 keywords: "dummy content"
 author: sooddong
 ---
