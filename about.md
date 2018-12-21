@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/
+permalink: 이수빈
 ---
 
-Introduce yourself here... so people will know who you are and what you do.. blah..blah..blah..
+안녕하십니까. 이수빈입니다.

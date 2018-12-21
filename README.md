@@ -1,4 +1,4 @@
-# Thinkspace
+# 이수빈의 러닝
 
 > Thinkspace is just another minimalist Jekyll theme which designed for technical writing blog.
 
