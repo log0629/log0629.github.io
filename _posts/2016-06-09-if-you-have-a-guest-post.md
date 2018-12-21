@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "If you have a Guest post.."
+title: "지똥이를 영순위로 사랑하는 수빈이의 "
 comments: true
 description: "If you have a Guest post.."
 keywords: "dummy content"
