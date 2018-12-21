@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 이수빈입니다. 지똥이를 제일 
 permalink: 이수빈
 ---
 
