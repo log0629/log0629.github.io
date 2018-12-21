@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Markdown Cheatsheet Demo"
+title: "수빈이는 지영이를 너무 사랑해"
 comments: true
 description: "Markdown Cheatsheet Demo..."
 keywords: "markdown, typography components, dummy content"
