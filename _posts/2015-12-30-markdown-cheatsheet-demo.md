@@ -28,7 +28,7 @@ Let's start with a informative paragraph. **This text is bolded.** But not this 
 
 <div class="divider"></div>
 
-## Footnote
+## 이수빈 개똥쟁이 메렁메렁메렁 
 
 Let's say you have text that you want to refer with a footnote, you can do that too! This is an example for the footnote number one [[^1]]. You can even add more footnotes, with link! [[^2]]
 
