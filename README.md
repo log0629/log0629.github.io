@@ -1,4 +1,4 @@
-# 이수빈의 러닝
+# 이수빈의 러닝 타임
 
 > Thinkspace is just another minimalist Jekyll theme which designed for technical writing blog.
 
