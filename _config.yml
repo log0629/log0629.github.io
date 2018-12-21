@@ -1,9 +1,9 @@
 # Site settings
-title_left    : "Think"
+title_left    : "Soobin"
 title_right   : "space" # default: ""
 description   : "Minimalist Jekyll theme for technical writing blog."
 keywords      : "Jekyll, theme, free, download, SEO, blog, web, minimalist, thinkspace"
-url           : https://heiswayi.github.io/thinkspace # site url
+url           : https://log0629.github.io/ # site url
 baseurl       :
 cover         : "" # image uri like logo/cover image for site seo
 
