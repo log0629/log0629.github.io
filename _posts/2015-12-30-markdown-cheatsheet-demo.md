@@ -15,7 +15,7 @@ keywords: "markdown, typography components, dummy content"
 
 ## SSL이란?
 
-![SL_USL_SSL](http://log0629.github.com/images/SL_USL_SSL.png)
+![SL_USL_SSL](http://log0629.github.io/assets/images/SL_USL_SSL.png)
 
 
 ## Headings H1 to H6
