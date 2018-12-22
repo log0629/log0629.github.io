@@ -41,17 +41,17 @@ Graph-Based SSL(이하 GSSL)은 그래프에 의해 나타내어지는 데이터
 1) k-Nearest-Neighbor Graph 
 k-Nearest-Neighbor Graph는 하나의 노드와 이 노드의 k-nearest neighbors 사이에 edge를 연결시킵니다. 
 
-![KNNG](http://log0629.github.io/assets/images/KNNG.png)
+![KNNG](http://log0629.github.io/assets/images/KNNG.jpg)
 
 2) Fully Connected Graph
 Fully Connected Graph는 하나의 노드를 기점으로 모든 노드를 연결하는 것을 의미합니다.
 
-![FCG](http://log0629.github.io/assets/images/FCG.png)
+![FCG](http://log0629.github.io/assets/images/FCG.jpg)
 
 3) ε-Radius Graph
 ε-Radius Graph는 하나의 노드를 기점으로 e radius의 구를 생성하여 그 안에 있는 노드들에 edge를 연결시킵니다.
 
-![ERG](http://log0629.github.io/assets/images/ERG.png)
+![ERG](http://log0629.github.io/assets/images/ERG.jpg)
 
 
 ## H2 Heading
