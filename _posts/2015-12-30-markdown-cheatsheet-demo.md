@@ -18,7 +18,6 @@ keywords: "markdown, typography components, dummy content"
 
 ![SL_USL_SSL](http://log0629.github.io/assets/images/SL_USL_SSL.png)
 
-
 Graph-Based Semi Supervised Learning에 대해 살펴보기에 앞서, Semi Supervised Learning에 대해 간단히 알아보겠습니다. 데이터를 다루는 대부분의 사람들은 Supervised Learning과 Unsupervised Learning에 대해서 주로 배우게 됩니다. Supervised Learning은 레이블(Y)이 있는 데이터셋을 활용한 학습 방법인 반면 Unsupervised Learning은 레이블이 없는 데이터셋을 활용한 학습 방법으로, 모델 스스로가 학습하는 것을 의미합니다. 
 Semi Supervised Learning의 경우 위의 두 학습 방법을 병합한 것으로, 레이블이 달려있는 데이터와 레이블이 달려있지 않은 데이터를 동시에 활용하는 것입니다.
 
@@ -26,6 +25,7 @@ Semi Supervised Learning의 경우 위의 두 학습 방법을 병합한 것으�
 
 
 
+<div class="divider"></div>
 
 ## Graph-Based Semi Supervised Learning
 
@@ -36,6 +36,8 @@ Graph-Based SSL(이하 GSSL)은 그래프에 의해 나타내어지는 데이터
  2.	Heavy edge에 의해 연결된 노드들은 같은 라벨을 지니려고 합니다.
 
 
+
+<div class="divider"></div>
 
 # Graph construction
 
@@ -61,6 +63,8 @@ Fully Connected Graph는 하나의 노드를 기점으로 모든 노드를 연�
 
 
 
+<div class="divider"></div>
+
 # The mincut algorithm
 
 이는 GSSL 알고리즘 중 가장 strict한 알고리즘입니다.
@@ -80,6 +84,8 @@ Unlabeled 된 data의 label은 무조건 0 이 아니면 1이여야 합니다.
 또한, 근처에 있는 노드들은 최대한 가까운 label과 동일시하려는 경향이 있음을 식을 통해서도 확인 할 수 있습니다.
 
 
+
+<div class="divider"></div>
 
 # Harmonic Function
 
