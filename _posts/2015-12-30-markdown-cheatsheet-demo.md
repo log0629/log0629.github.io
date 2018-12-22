@@ -1,16 +1,22 @@
 ---
 layout: post
-title: "수빈이는 지영이를 너무 사랑해"
+title: "Graph-Based Semi Supervised Learning"
 comments: true
 description: "Markdown Cheatsheet Demo..."
 keywords: "markdown, typography components, dummy content"
 ---
 
-## Typography Elements in One
-
-Let's start with a informative paragraph. **This text is bolded.** But not this one! _How about italic text?_ Cool right? Ok, let's **_combine_** them together. Yeah, that's right! I have code to highlight, so `ThisIsMyCode()`. What a nice! Good people will hyperlink away, so [here we go](#) or [http://www.example.com](http://www.example.com).
+시작에 앞서, 고려대학교 강필성 교수님의 강의 및 자료를 바탕으로 정리하였음을 밝힙니다.
+이번 포스팅에선 Graph-Based Semi Supervised Learning에 대해서 살펴보도록 하겠습니다. 
 
 <div class="divider"></div>
+
+
+
+## SSL이란?
+
+![SL_USL_SSL](http://log0629.github.com/images/SL_USL_SSL.png)
+
 
 ## Headings H1 to H6
 
