@@ -13,6 +13,7 @@ keywords: "markdown, typography components, dummy content"
 
 
 
+
 ## Semi-Supervised Learning
 
 ![SL_USL_SSL](http://log0629.github.io/assets/images/SL_USL_SSL.png)
@@ -25,6 +26,7 @@ Semi Supervised Learning의 경우 위의 두 학습 방법을 병합한 것으�
 
 
 
+
 ## Graph-Based Semi Supervised Learning
 
 Graph-Based SSL(이하 GSSL)은 그래프에 의해 나타내어지는 데이터셋들에 대해 사용됩니다. 대표적으로 Social Network를 꼽을 수 있습니다. 그리고 각 요소들의 형태가 동일하지 않은 이질 데이터형을 표현하기 위해 쓰이기도 합니다. 여기서 GSSL은 다음과 같은 가정이 필요합니다.
@@ -32,6 +34,7 @@ Graph-Based SSL(이하 GSSL)은 그래프에 의해 나타내어지는 데이터
  1.	그래프는 Semi Supervised Learning에 사용되는 데이터에 기반합니다. 
 
  2.	Heavy edge에 의해 연결된 노드들은 같은 라벨을 지니려고 합니다.
+
 
 
 # Graph construction
@@ -56,6 +59,8 @@ Fully Connected Graph는 하나의 노드를 기점으로 모든 노드를 연�
 
 그렇다면, GSSL을 나타내는 알고리즘은 어떤 것들이 있을지 알아보겠습니다.
 
+
+
 # The mincut algorithm
 
 이는 GSSL 알고리즘 중 가장 strict한 알고리즘입니다.
@@ -73,6 +78,8 @@ Unlabeled 된 data의 label은 무조건 0 이 아니면 1이여야 합니다.
 ![그림3](http://log0629.github.io/assets/images/그림3.png)
 
 또한, 근처에 있는 노드들은 최대한 가까운 label과 동일시하려는 경향이 있음을 식을 통해서도 확인 할 수 있습니다.
+
+
 
 # Harmonic Function
 
@@ -92,7 +99,9 @@ Harmonic Function은 각 데이터 쌍의 edge, 즉 가중치가 클수록 데�
 
 λ의 증가 : 실제 y의 label이 바뀌게 될 가능성이 커진다.
 
-λ의 감소 : 현재 주어진 label을 신뢰한다
+λ의 감소 : 현재 주어진 label을 신뢰한다.
+
+
 
 ### H3 Heading
 
