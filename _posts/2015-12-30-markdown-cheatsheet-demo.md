@@ -41,20 +41,41 @@ Graph-Based SSL(이하 GSSL)은 그래프에 의해 나타내어지는 데이터
 1) k-Nearest-Neighbor Graph 
 k-Nearest-Neighbor Graph는 하나의 노드와 이 노드의 k-nearest neighbors 사이에 edge를 연결시킵니다. 
 
-</div>![KNNG](http://log0629.github.io/assets/images/KNNG.jpg)
+![KNNG](http://log0629.github.io/assets/images/KNNG.jpg)
 
 2) Fully Connected Graph
 Fully Connected Graph는 하나의 노드를 기점으로 모든 노드를 연결하는 것을 의미합니다.
 
-</div>![FCG](http://log0629.github.io/assets/images/FCG.jpg)
+![FCG](http://log0629.github.io/assets/images/FCG.jpg)
 
 3) ε-Radius Graph
 ε-Radius Graph는 하나의 노드를 기점으로 e radius의 구를 생성하여 그 안에 있는 노드들에 edge를 연결시킵니다.
 
-</div>![ERG](http://log0629.github.io/assets/images/ERG.jpg)
+![ERG](http://log0629.github.io/assets/images/ERG.jpg)
 
 
-## H2 Heading
+그렇다면, GSSL을 나타내는 알고리즘은 어떤 것들이 있을지 알아보겠습니다.
+
+# The mincut algorithm
+
+이는 GSSL 알고리즘 중 가장 strict한 알고리즘입니다.
+Unlabeled 된 data의 label은 무조건 0 이 아니면 1이여야 합니다.
+따라서, ![그림1](http://log0629.github.io/assets/images/그림1.jpg)
+이 식을 minimize 하기 위해 ![그림2](http://log0629.github.io/assets/images/그림2.jpg) 이를 구해야 합니다. 이를 optimization problem으로 접근하였을 때, 다음과 같이 접근 할 수 있는데, labeled된 data의 경우 label은 절대로 바뀌어서는 안 됩니다.
+![그림3](http://log0629.github.io/assets/images/그림3.jpg)
+또한, 근처에 있는 노드들은 최대한 가까운 label과 동일시하려는 경향이 있음을 식을 통해서도 확인 할 수 있습니다.
+
+# Harmonic Function
+
+Harmonic Function은 각 데이터 쌍의 edge, 즉 가중치가 클수록 데이터 레이블을 동일하게 할당하기 위한 optimization problem을 풀도록 구성되어 있습니다. Harmonic Function을 다음과 같이 정의합니다.
+![그림5](http://log0629.github.io/assets/images/그림5.jpg)
+이 때, 에너지 함수를 최소화 시키는 식을 다음과 같이 정의합니다.
+![그림6](http://log0629.github.io/assets/images/그림6.jpg)
+이 후 코드를 활용한 부분에서 보겠지만 Continuous Value를 보기 위해 Mincut 알고리즘이 아닌Harmonic Function을 사용할 것입니다. 그리고 실제 labeled된 데이터는 무한대의 penalty를 부여하는데, 이를 완화시키는 harmonic function도 있습니다.
+![그림7](http://log0629.github.io/assets/images/그림7.jpg)
+이는 실제로 label이 다를 수 있음을 허용(penalty를 부여)하자는 의미로, 실제 label에 대한 신뢰도에 대한 부분을 식을 통해 알 수 있습니다. 또한 λ의 크기에 따라 다음과 같이 해석할 수 있습니다. 
+λ의 증가 : 실제 y의 label이 바뀌게 될 가능성이 커진다.
+λ의 감소 : 현재 주어진 label을 신뢰한다
 
 ### H3 Heading
 
