@@ -13,14 +13,46 @@ keywords: "markdown, typography components, dummy content"
 
 
 
-## SSL이란?
+## Semi-Supervised Learning
 
 ![SL_USL_SSL](http://log0629.github.io/assets/images/SL_USL_SSL.png)
 
 
-## Headings H1 to H6
+Graph-Based Semi Supervised Learning에 대해 살펴보기에 앞서, Semi Supervised Learning에 대해 간단히 알아보겠습니다. 데이터를 다루는 대부분의 사람들은 Supervised Learning과 Unsupervised Learning에 대해서 주로 배우게 됩니다. Supervised Learning은 레이블(Y)이 있는 데이터셋을 활용한 학습 방법인 반면 Unsupervised Learning은 레이블이 없는 데이터셋을 활용한 학습 방법으로, 모델 스스로가 학습하는 것을 의미합니다. 
+Semi Supervised Learning의 경우 위의 두 학습 방법을 병합한 것으로, 레이블이 달려있는 데이터와 레이블이 달려있지 않은 데이터를 동시에 활용하는 것입니다.
 
-# H1 Heading
+이제 본격적으로 Graph-Based Semi Supervised Learning에 대해 알아보겠습니다.
+
+
+
+## Graph-Based Semi Supervised Learning
+
+Graph-Based SSL(이하 GSSL)은 그래프에 의해 나타내어지는 데이터셋들에 대해 사용됩니다. 대표적으로 Social Network를 꼽을 수 있습니다. 그리고 각 요소들의 형태가 동일하지 않은 이질 데이터형을 표현하기 위해 쓰이기도 합니다. 여기서 GSSL은 다음과 같은 가정이 필요합니다.
+
+ 1.	그래프는 Semi Supervised Learning에 사용되는 데이터에 기반합니다. 
+
+ 2.	Heavy edge에 의해 연결된 노드들은 같은 라벨을 지니려고 합니다.
+
+
+# Graph construction
+
+다음 세 가지 방법으로 그래프의 Edge를 정하게 됩니다.
+
+1) k-Nearest-Neighbor Graph 
+k-Nearest-Neighbor Graph는 하나의 노드와 이 노드의 k-nearest neighbors 사이에 edge를 연결시킵니다. 
+
+![KNNG](http://log0629.github.io/assets/images/KNNG.png)
+
+2) Fully Connected Graph
+Fully Connected Graph는 하나의 노드를 기점으로 모든 노드를 연결하는 것을 의미합니다.
+
+![FCG](http://log0629.github.io/assets/images/FCG.png)
+
+3) ε-Radius Graph
+ε-Radius Graph는 하나의 노드를 기점으로 e radius의 구를 생성하여 그 안에 있는 노드들에 edge를 연결시킵니다.
+
+![ERG](http://log0629.github.io/assets/images/ERG.png)
+
 
 ## H2 Heading
 
